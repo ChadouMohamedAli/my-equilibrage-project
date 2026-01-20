@@ -1,0 +1,33 @@
+your-project/
+├── app.py                      # Main Streamlit app (single page)
+├── api.py                      # FastAPI/Flask API server
+├── core/                       # Core logic
+│   ├── __init__.py
+│   ├── models.py              # Model loading/inference
+│   ├── preprocessing.py       # Data processing
+│   └── config.py             # Configuration
+├── scripts/                    # Your existing scripts
+│   ├── data_processing/
+│   │   ├── clean_csv.py
+│   │   ├── feature_engineering.py
+│   │   └── merge_data.py
+│   ├── model_training/
+│   │   ├── train.py
+│   │   ├── evaluate.py
+│   │   └── model.sh          # Your existing model.sh
+│   └── utils/
+│       ├── backup.py
+│       └── helpers.py
+├── data/                       # CSV files and data
+│   ├── raw/                   # Original CSV files
+│   ├── processed/             # Cleaned data
+│   └── outputs/               # Generated outputs
+├── models/                     # Trained models
+│   ├── model.pkl
+│   ├── model.joblib
+│   └── checkpoints/
+├── requirements.txt
+├── .env
+├── .gitignore
+├── README.md
+└── Makefile
